@@ -15,7 +15,7 @@ def get_timestamp():
 def pesquisa_pagina_relatorios_cgu():
     
     # Define os nomes padrões da pasta de destino e dos arquivos
-    folder = 'paginas'
+    folder = '/Volumes/DATA2/data_relatorios_cgu/paginas'
     
     # define o offset 0 para pegar a primeira página
     offset = 0

@@ -10,16 +10,21 @@ import datetime
 # https://eaud.cgu.gov.br/relatorios/download/1110235
 
 def save_log(log_name, file_name):
-    folder = 'log'
+    folder = '/Volumes/DATA2/data_relatorios_cgu/log'
     file_path = os.path.join(folder, log_name)
 
     with open(file_path, 'a') as file:
         file.write(f"Arquivo: {file_name}, {datetime.datetime.now()}\n")
 
 def download_pdf(id):
-    file_name = f"relatorios/relatorio_{id}.pdf"
+    
+    folder = '/Volumes/DATA2/data_relatorios_cgu/relatorios'
+    file_name = os.path.join(folder, f"relatorio_{id}.pdf") 
+    
     url = f"https://eaud.cgu.gov.br/relatorios/download/{id}"
+    
     response = requests.get(url)
+    
     with open(file_name, 'wb') as file:
         file.write(response.content)
 
