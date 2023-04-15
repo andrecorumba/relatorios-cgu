@@ -40,8 +40,6 @@ realizados (a que contém cerca de 23 mil arquivos) para não ocupar espaço
 já que foram copiados para outra pasta. Não implementei script para deletar
 os arquivos.
 
-A seguir constam descrições dos módulos e funções deste projeto:
-
 ## Uso
 
 O módulo principal é `main.py`, que coordena os outros módulos para baixar e processar os relatórios. Para usar o código, basta chamar o módulo principal:
